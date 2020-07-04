@@ -115,7 +115,7 @@ function tick(game){
     }
   }
   if (game.step % 30 === 0){
-    var max = Math.max(game.ships.length*8,Math.min(26,~~(game.ships.length*2.2))); 
+    var max = Math.max(14,Math.min(26,~~(game.ships.length*2.2))); 
     if (game.aliens.length < max){
       var spawn_delay = game.step / ~~(1800/2*2.5);
       var alien = aliens[~~(Math.random()*Math.min(aliens.length,spawn_delay/4))];
