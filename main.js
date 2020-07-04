@@ -100,7 +100,7 @@ this.options = {
   vocabulary: vocabulary,
   custom_map: map,
   asteroids_strength: 10,
-  station_size: 1,
+  station_size: 2,
   ships: ships,
 };
  
@@ -130,6 +130,7 @@ function tick(game){
         ship.custom.init = true;
         joinmessage(ship);
         basetimer(game);
+        ship.custom.alive = true;
         game.configImageUI({
           id: "very important",
           visible: true,
@@ -148,6 +149,19 @@ function tick(game){
           scale: {x:1,y:1.5},
           opacity: 1
         },ship.setUIComponent);        
+      }
+      for (let ship of game.ships){
+        if (ship.alive === true){
+        setTimeout(function(){
+          ship.custom.alive = true;
+        },5000);          
+        }
+        if (ship.x**2 + ship.y**2 > ship_radius && !ship.custom.alive){
+          setTimeout(function(){
+            ship.custom.alive = true;
+            ship.set({x:0,y:0});
+          },5000);      
+        }
       }
     }
     if (rip > 79){
@@ -190,10 +204,13 @@ function tick(game){
     }
   }
 }
- 
+
+var ship_radius = 0.35;
+
 function game_start(game){
   if (!game.custom.init){
-    game.custom.init = true;
+    game.custom.init = true; 
+    ship_radius = (ship_radius * game.options.map_size * 5) ** 2;
     game.addAlien({code:19,level:2,crystals:4000,points:4000,x:0,y:300});
     game.aliens[0].set({shield:10000,regen:5});
     for (let i=0; i<40; i+=10) game.addAlien({code:12,crystals:1200,points:1200,x:Math.cos(Math.random()*Math.PI*2)*i,y:280+Math.sin(Math.random()*Math.PI*2)*i});
@@ -201,6 +218,15 @@ function game_start(game){
   this.tick = tick;
 }
 this.tick = game_start;
+
+this.event = function(event, game){
+  switch (event.name){
+    case "ship_destroyed":
+      event.ship.custom.alive = false;
+    break;
+  }
+};
+
 
 var rip = 1;
 
