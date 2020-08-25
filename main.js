@@ -172,7 +172,7 @@ this.options = {
   vocabulary: vocabulary,
   custom_map: map,
   asteroids_strength: 10000,
-  //ships: ships,
+  ships: ships,
   reset_tree: true,
 };
 
