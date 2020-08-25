@@ -2,67 +2,107 @@
 //Other ships by Nova, Supernova, and Money
 //Coding done by Money
 //Map change accomplished
-/*var map =
-"-----------------3--9999--2-----1--39999-2------------------\n"+
-"----99---------2---19999------4-----9999-1------------99----\n"+
-"-----996--------1--0-1--38-7------8--------0---------99-----\n"+
-"------999---99--99--9999-----------79999--99--99---999------\n"+
-"--------99---99--99--999--28---68-5-999--99--99---99--------\n"+
-"---------99---99--99--999----4--2--999--99--99---99---------\n"+
-"------7---99---99--99--9999-9999-9999--99--99---99---3------\n"+
-"-----------99---99--99--999-9999-999--99--99---99-----------\n"+
-"------------99---99--99--99-9999-99--99--99---99------------\n"+
-"-------------99---99--99--9-9999-9--99--99---99-------------\n"+
-"--------------99---99--99------2---99--99---99-4------------\n"+
-"----------8----99---99--99-1------99--99---99---------------\n"+
-"----------------99---99--99-0----99--99---99----------------\n"+
-"----2------------99---99--9---0--9--99---99----------1------\n"+
-"-----------------799---99---3--2---99---99------------------\n"+
-"--------3----------99---99--------99---99-------------------\n"+
-"-----------4--------99---99------99---99--------5-----------\n"+
-"-----------7---------99---9------9---99---------------------\n"+
-"----------------------99------------99----------------------\n"+
-"-----------------------99----------99-----------------------\n"+
-"-----2------------------99--------99-----2---------------8--\n"+
-"-------------------------99------99-------------------------\n"+
-"-------------------------99------99-------------------------\n"+
-"---------------03-------99--1-----99--------------1---------\n"+
-"----------------------999--------0-999----------------------\n"+
-"---------4-----------99----8---------991----------------1--9\n"+
-"--------------------------------------99--------------------\n"+
-"-------------------99-3-----------4----99-------------------\n"+
-"-------------------99----0-------------99-------------------\n"+
-"-44----------------99-------------3----99-------------------\n"+
-"-------------------99-6----------------99-------------------\n"+
-"-------------------99-----0---------5--99-------------------\n"+
-"-------------------99----------3-------99-------------------\n"+
-"--------------------99----4--6----------------------4-------\n"+
-"------7----------4---99--------------99---8----------------9\n"+
-"----------------------999----------999----------------------\n"+
-"------------------------99--------99------------------------\n"+
-"--------------6----------99------99-------------------------\n"+
-"-------------------------99------99-----------------------3-\n"+
-"------------------------99--------99------------4-----------\n"+
-"---------------4-------99----------99-----------------------\n"+
-"------1---------------99------------99----------------------\n"+
-"---------------------99---9------9---99---------------------\n"+
-"--------------------99---99------99---99--------------------\n"+
-"----------2--------99---99--------99---99-------7-----------\n"+
-"------------------99---99---1--02--99---99------------------\n"+
-"-----------------99---99--93--1-99--99---99-----------------\n"+
-"--2-------------99---99--89------9---99---99----------------\n"+
-"---------------99---99--99--2--1--99--99---99--------7------\n"+
-"----------4---99---99--99----------99--99---99--------------\n"+
-"-------------99---99--99--9-9999-9--99--99---99-------------\n"+
-"------------99---99--99--99-9999-99--99--99---99------------\n"+
-"-----------99---99--99--999-9999-999--99--99---99-----------\n"+
-"----------99---99--99--9999-9999-9999--99--99---992---------\n"+
-"---------99---99--99--999-3--------999--99--99---99----8----\n"+
-"----3---99---99--99--999---84---83--999--99--99---99--------\n"+
-"------999---99--99--9999--9----5----9999--99--99---999------\n"+
-"-----99--------0-4-------8------5-82--2--------------99-----\n"+
-"----99-------------19999-0---9----7-99991--0----------99----\n"+
-"----99----------3---9999-3---------39999--------------99----" ;*/
+var map =
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999                                                              9999999999999999999\n"+
+"9999999999999999999        99                                          99        9999999999999999999\n"+
+"999999999999999999         99                                          99         999999999999999999\n"+
+"999999999999999999                      99999999999999999999                      999999999999999999\n"+
+"999999999999999999                    999999999999999999999999                    999999999999999999\n"+
+"999999999999999999             99          99999999999999          99             999999999999999999\n"+
+"99999999999999999     99       99           999999999999           99       99     99999999999999999\n"+
+"99999999999999999     99                     9999999999                     99     99999999999999999\n"+
+"99999999999999999                             99999999                             99999999999999999\n"+
+"9999999999999999                              99999999                              9999999999999999\n"+
+"9999999999999999              999999           999999           999999              9999999999999999\n"+
+"999999999999999            999999999999        999999        999999999999            999999999999999\n"+
+"99999999999999           999999999999999       999999       999999999999999           99999999999999\n"+
+"999999999999           99999999999999999       999999       99999999999999999           999999999999\n"+
+"999999999             99999999999999999        999999        99999999999999999             999999999\n"+
+"99999               9999999999999999999       99999999       9999999999999999999               99999\n"+
+"999               99999999999999999999       9999999999       99999999999999999999               999\n"+
+"999              99999999999999999999        9999999999        99999999999999999999              999\n"+
+"999             999999999999999                 9999                 999999999999999             999\n"+
+"999           9999999999999999                   99                   9999999999999999           999\n"+
+"999          9999999999999999                    99                    9999999999999999          999\n"+
+"999         99999999999999999                                          99999999999999999         999\n"+
+"999       999999999999999999                                            999999999999999999       999\n"+
+"999     9999999999999999999           999999            999999           9999999999999999999     999\n"+
+"999    9999999999999999999          9999999999        9999999999          9999999999999999999    999\n"+
+"999    999999999999999999         9999999                 99999999         999999999999999999    999\n"+
+"999     99999999999999           999999                     9999999           99999999999999     999\n"+
+"999     999999                  99999                          99999                  999999     999\n"+
+"999      99                    99999                            99999                    99      999\n"+
+"999                           9999                                9999                           999\n"+
+"999                     9    9999        9999          9999        9999    9                     999\n"+
+"999                  9999    999        999999        999999        999    9999                  999\n"+
+"999                 99999   999        999  9          9  999        999   99999                 999\n"+
+"9999             99999999  999         99                  99         999  99999999             9999\n"+
+"99           99999999999              999                  999              99999999999           99\n"+
+"99  9      9999999999999              999        99        999              9999999999999      9  99\n"+
+"99  9      9999999999999              999        99        999              9999999999999      9  99\n"+
+"99           99999999999              999                  999              99999999999           99\n"+
+"9999             99999999  999         99                  99         999  99999999             9999\n"+
+"999                 99999   999        999  9          9  999        999   99999                 999\n"+
+"999                  9999    999        999999        999999        999    9999                  999\n"+
+"999                     9    999         9999          9999         999    9                     999\n"+
+"999                           9999                                9999                    99     999\n"+
+"999      99                    9999                              9999                  999999    999\n"+
+"999     999999                  99999                          99999           999999999999999   999\n"+
+"999     99999999999999           99999                        99999         999999999999999999   999\n"+
+"999    999999999999999999         999999                    999999         999999999999999999    999\n"+
+"999    9999999999999999999         9999999                9999999         9999999999999999999    999\n"+
+"999     9999999999999999999          999999999        9999999999         9999999999999999999     999\n"+
+"999       999999999999999999           99999            999999          999999999999999999       999\n"+
+"999         99999999999999999                                          99999999999999999         999\n"+
+"999          9999999999999999                                          9999999999999999          999\n"+
+"999           9999999999999999                   99                   9999999999999999           999\n"+
+"999             999999999999999                  99                  999999999999999             999\n"+
+"999              99999999999999999999           9999           99999999999999999999              999\n"+
+"999               99999999999999999999       9999999999       99999999999999999999               999\n"+
+"999                 9999999999999999999      9999999999      9999999999999999999                 999\n"+
+"999                   99999999999999999       99999999       99999999999999999                   999\n"+
+"99999                  99999999999999999       999999       99999999999999999                  99999\n"+
+"999999999                999999999999999       999999       999999999999999                999999999\n"+
+"999999999999               999999999999        999999        999999999999               999999999999\n"+
+"99999999999999                999999           999999           999999                99999999999999\n"+
+"999999999999999                                999999                                999999999999999\n"+
+"9999999999999999                              99999999                              9999999999999999\n"+
+"9999999999999999      99                      99999999                      99      9999999999999999\n"+
+"99999999999999999     99       99            9999999999            99       99     99999999999999999\n"+
+"99999999999999999              99           999999999999           99              99999999999999999\n"+
+"99999999999999999                          99999999999999                          99999999999999999\n"+
+"999999999999999999                    999999999999999999999999                    999999999999999999\n"+
+"999999999999999999         99           99999999999999999999           99         999999999999999999\n"+
+"999999999999999999         99                                          99         999999999999999999\n"+
+"999999999999999999                                                                999999999999999999\n"+
+"9999999999999999999                                                              9999999999999999999\n"+
+"9999999999999999999                                                              9999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\n"+
+"9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999";
 //------------------------------------------------------------------------------------------------------------------------------------------------
 var vocabulary = [
   {text: "You", icon:"\u004e", key:"O" },
@@ -122,132 +162,49 @@ ships.push(Dominus_701);
 ships.push(Zeroboros_702);
 
 this.options = {
-  root_mode: "team",
-  friendly_colors: 1,
-  map_size: 60,
+  root_mode: "",
+  friendly_colors: 2,
+  map_size: 100,
   radar_zoom: 1,
   crystal_value: 0,
   soundtrack: "argon.mp3",
   speed_mod: 1.2,
   vocabulary: vocabulary,
-//  custom_map: map,
-  asteroids_strength: 10,
-  station_size: 2,
-  ships: ships,
+  custom_map: map,
+  asteroids_strength: 10000,
+  //ships: ships,
   reset_tree: true,
-  station_crystal_capacity: 0.8,
-  station_repair_threshold: 0.1,
 };
 
-/*function tick(game){
-  if (game.step % 3600 === 0){
-    if (game.ships.length === 1||2){
-      rip += 1;
-      basetimer(game);
-    } else {
-      rip += ~~(game.ships.length/3); 
-      basetimer(game);
-    }
-  }
+function tick(game){
   if (game.step % 30 === 0){
-    var max = Math.max(2,Math.min(100,~~(game.ships.length*7))); 
+    var max = Math.max(10,Math.min(24,~~(game.ships.length*7))); 
     if (game.aliens.length < max){
       var spawn_delay = game.step / ~~(1800/2*2.5);
       var alien = aliens[~~(Math.random()*Math.min(aliens.length,spawn_delay/4))];
-      var coords = [[300,10],[300,-10],[290,0],[-290,0]];
+      var coords = [[0,0],[0,0],[0,0],[0,0]];
       oof = coords[~~(Math.random()*coords.length)];
       alien.x = oof[1]+Math.cos(Math.random()*Math.PI*2)*5;
       alien.y = oof[0]+Math.sin(Math.random()*Math.PI*2)*5;
       game.addAlien(alien);
     }
-    for (let ship of game.ships){
+    teams.count = [0,0];
+    for (let ship of game.ships){  
       if (!ship.custom.init){
         ship.custom.init = true;
-        joinmessage(ship);
-        basetimer(game);
-        ship.custom.alive = true;
-        game.configImageUI({
-          id: "very important",
-          visible: true,
-          clickable: false,
-          url: "https://raw.githubusercontent.com/Bhpsngum/img-src/master/yeet.jpg",
-          position: {x:5,y:30},
-          scale: {x:1,y:1.5},
-          opacity: 1
-        },ship.setUIComponent);
-        game.configImageUI({
-          id: "very important2",
-          visible: true,
-          clickable: false,
-          url: "https://raw.githubusercontent.com/Bhpsngum/img-src/master/yeet2.jpg",
-          position: {x:8,y:30},
-          scale: {x:1,y:1.5},
-          opacity: 1
-        },ship.setUIComponent);        
-      }
-      for (let ship of game.ships){
-        if (ship.alive === true){
-        setTimeout(function(){
-          ship.custom.alive = true;
-        },5000);          
-        }
-        if (ship.x**2 + ship.y**2 > ship_radius && !ship.custom.alive){
-          setTimeout(function(){
-            ship.custom.alive = true;
-            ship.set({x:0,y:0});
-          },5000);      
-        }
-      }
-    }
-    if (rip > 79){
-      game.setUIComponent({
-        id: "wtf",
-        position: [32,8,42-8,40-8],
-        visible: true,
-        components: [
-          {type: "text",position:[0,0,80,33],value:"Your base is out of health!",color:"#fff"},
-        ]
-      });         
-      setTimeout(function(){
-        for (let ship of game.ships) ship.gameover({"Try again next time!":""});
-        game.modding.I1I0I.send({name:"stop"});
-      },5000);
-    }
-    for(var i=0; i<game.aliens.length; i++){  
-      if (game.aliens[0].code == 19){
-        //curry curry curry 
-      } else {
-        for (let alien of game.aliens) alien.set({kill:true});
-        game.setUIComponent({
-          id: "lol",
-          position: [31,10,42-8,40-8],
-          visible: true,
-          components: [
-            {type: "text",position:[0,-8,100,53],value:"Purple Saucer has been killed",color:"#fff"},
-            {type: "text",position:[9,17,80,33],value:"GG, thanks for playing!",color:"#fff"},
-          ]
-        });            
-        setTimeout(function(){ //don't make functions within a loop well FUCK YOU  
-          for (let ship of game.ships) ship.gameover({"Nice":""});
-          game.modding.I1I0I.send({name:"stop"});
-        },5000);
-      }
-      //if (game.aliens[i].code == 12){
-      //} else {
-        //for (let i=0; i<2; i++) game.addAlien({code:19,level:1,crystals:2000,points:2000,x:game.aliens[0].x,y:game.aliens[0].y,vy:-1});
-      //}
+        joinmessage(ship);     
+        setteam(ship);
+        ship.setUIComponent(radar_background);
+      } teams.count[ship.custom.team]++;
     }
   }
 }
 
-var ship_radius = 0.35;*/
-
 function game_start(game){
   if (!game.custom.init){
     game.custom.init = true;
-//    game.addAlien({code:19,level:2,crystals:4000,points:4000,x:0,y:300,shield:10000,regen:0,damage:150,rate:0.3});
-//    game.aliens[0].set({shield:10000,regen:5});
-//    for (let i=0; i<40; i+=10) game.addAlien({code:10,level:4,crystal_drop:1000,points:1250,shield:2000,rate:10,regen:0,x:Math.cos(Math.random()*Math.PI*2)*i,y:280+Math.sin(Math.random()*Math.PI*2)*i});
+    game.addAlien({code:19,level:3,x:-472.5});
+    game.addAlien({code:19,level:3,x:472.5});
   }
   this.tick = tick;
 }
@@ -256,10 +213,105 @@ this.tick = game_start;
 this.event = function(event, game){
   switch (event.name){
     case "ship_destroyed":
-      event.ship.custom.alive = false;
     break;
+    case "ship_spawned":
+      event.ship.set({x:teams.spawn[event.ship.team],y:0});
+    break;
+    case "alien_destroyed":
+      if (event.alien.id === 0){
+        for (let ship of game.ships){
+          if (ship.team === event.alien.id){
+            ship.gameover({"Your motheralien has been destroyed":"","Score":ship.score});
+          } else {
+            ship.gameover({"Your team destroyed the enemy motheralien, GG":"","Score":ship.score});
+          }
+        }
+      } else if (event.alien.id === 1){
+        for (let ship of game.ships){
+          if (ship.team === event.alien.id){
+            ship.gameover({"Your motheralien has been destroyed":"","Score":ship.score});
+          } else {
+            ship.gameover({"Your team destroyed the enemy motheralien, GG":"","Score":ship.score});
+          }
+        }        
+      }
+    break;    
   }
 };
+
+var aliens = [
+  {code:10,level:0,points:20,crystal_drop:10},
+  {code:11,level:0,points:30,crystal_drop:20},
+  {code:10,level:1,points:40,crystal_drop:20},
+  {code:17,level:0,points:30,crystal_drop:20},
+  {code:16,level:0,points:30,crystal_drop:20},
+  {code:17,level:1,points:50,crystal_drop:40},
+  {code:16,level:1,points:50,crystal_drop:40}, 
+  {code:11,level:2,points:120,crystal_drop:100}, 
+  {code:10,level:2,points:70,crystal_drop:40}, 
+  {code:14,level:1,points:70,crystal_drop:60}, 
+  {code:16,level:2,points:150,crystal_drop:150},
+  {code:17,level:3,points:100,crystal_drop:150}, 
+  {code:19,level:0,points:400,crystal_drop:400},
+];
+
+var teams = {
+  hues: [0,240],
+  spawn: [-410,410],
+  count: [0,0],
+  points: [0,0]
+};
+
+function setteam(ship){
+  let t;
+  if ([...new Set(teams.count)].length == 1) t=teams.points.indexOf(Math.min(...teams.points));
+  else t = teams.count.indexOf(Math.min(...teams.count));
+  ship.custom.team = t;
+  configship(ship, t);
+}
+
+function configship(ship,t){
+  ship.set({x:teams.spawn[ship.custom.team],y:0,hue:teams.hues[t],team:t,invulnerable:600,stats:88888888});
+}
+
+var radar_background = {
+  id: "radar_background",
+  components: [],
+};
+ 
+var scale_pos = 100 / (this.options.map_size * 10);
+var scale_size = 50 / this.options.map_size;
+
+function addRadarSpot (x, y, type, width, height, alpha, color){
+  radar_background.components.push({
+    type: type,
+    position: [
+      50 + x * scale_pos - width * scale_size / 2,
+      50 + y * scale_pos - height * scale_size / 2,
+      width * scale_size,
+      height * scale_size,
+    ],
+    fill: `hsla(${color},100%,50%,${alpha})`,
+  });
+}
+
+addRadarSpot(-410,-5,"box",10,10,0.5,0); 
+addRadarSpot(410,-5,"box",10,10,0.5,240); 
+
+function joinmessage(ship){
+  ship.setUIComponent({
+    id: "yeet",
+    position: [32,8,42-8,40-8],
+    visible: true,
+    components: [
+      {type: "text",position:[-2,-3,100,50],value:"Destroy the enemy's motheralien to win",color:"#cde"},
+      {type: "text",position:[7,20,80-4,33-4],value:"Good luck and have fun!",color:"#cde"},
+    ]
+  });      
+  setTimeout(function(){  
+    ship.setUIComponent({id:"yeet",visible:false});
+  },8000);
+}
  
 var center = {
   id: "center",
@@ -473,161 +525,11 @@ game.setObject({
   rotation: {x:0,y:0,z:1.571}
 });
 
-/*var rip = 1;
-
-yeetalien = function(game){
-  for(let i=0; i<game.aliens.length; i++){
-    game.aliens[i].set({kill:true});
-  }
-};
-
-var aliens = [
-{code:10,level:0,points:20,crystal_drop:100},
-{code:11,level:0,points:30,crystal_drop:200},
-{code:10,level:1,points:40,crystal_drop:20},
-{code:17,level:0,points:30,crystal_drop:20},
-{code:16,level:0,points:30,crystal_drop:20},
-{code:17,level:1,points:50,crystal_drop:40},
-{code:16,level:1,points:50,crystal_drop:40}, 
-{code:11,level:2,points:120,crystal_drop:100}, 
-{code:10,level:2,points:70,crystal_drop:40}, 
-{code:14,level:1,points:70,crystal_drop:60}, 
-{code:16,level:2,points:150,crystal_drop:150},
-{code:17,level:3,points:100,crystal_drop:150}, 
-{code:19,level:0,points:400,crystal_drop:400},
-];
-
-function rand(lol){
-  return ~~((Math.random() * lol));
-}
-
-function basetimer(game){
-  game.setUIComponent({
-    id: "pogggggggg",
-    position: [22,1,22,20],
-    visible: true,
-    components: [
-      {type: "text",position:[0,0,80,33],value:"Station energy:",color:"#fff"},
-      {type:"box",position:[1,34,79-rip,10],fill:"#00cc00"},
-      {type:"box",position:[1,34,78,10],stroke:"#000",width:3}
-    ]
-  });   
-}
-
-function joinmessage(ship){
-  ship.setUIComponent({
-    id: "yeet",
-    position: [32,8,42-8,40-8],
-    visible: true,
-    components: [
-      {type: "text",position:[0,0,85+3,38+3],value:"Kill the purple Saucer to win",color:"#fff"},
-      {type: "text",position:[5.5,20,80-4,33-4],value:"Good luck and have fun!",color:"#fff"},
-    ]
-  });      
-  setTimeout(function(){  
-    ship.setUIComponent({id:"yeet",visible:false});
-  },5000);
-}
-
-game.configImageUI = function(opt, handler){
-  let image = {
-    id: opt.id,
-    visible: opt.visible,
-    clickable: opt.clickable,
-    components: []
-  };
-  if (opt.url){
-    let img = $("#"+opt.id)[0];
-    if (!img){
-      img = document.createElement("img");
-      img.setAttribute("id",opt.id);
-      img.setAttribute("style","display:none");
-      img.crossOrigin = "anonymous";
-      $('body').append(img);
-    }
-    img.onload = function(){
-      this.canvas = $('<canvas />')[0];
-      this.canvas.width = img.width;
-      this.canvas.height = img.height;
-      this.canvas.getContext('2d').drawImage(this, 0, 0, this.width, this.height);
-      let mx,my,h=100/this.height,w=100/this.width,d=[],pos=opt.position||{x:0,y:0},scale = opt.scale||{x:1,y:1};
-      function round(num){
-        return parseFloat(num.toFixed(2));
-      }
-      if (["scoreboard","radar_background"].indexOf(opt.id) != -1){
-        d=[0,0];
-        mx=(pos.x||0)/100;
-        my=(pos.y||0)/100;
-      } else {
-        d = [pos.x||0,pos.y||0];
-        mx=0;
-        my=0;
-      }
-      image.position = [d,[round(w*(scale.x||1)),round(h*(scale.y||1))]].flat();
-      for (let i=0;i<this.height;i++){
-        for (let j=0;j<this.width;j++){
-          let data = img.canvas.getContext('2d').getImageData(j,i,1,1).data;
-          image.components.push({type:"box",position:[round(w*j+mx),round(h*i+my),round(w*1.5),round(h*1.5)],fill:`rgba(${data[0]},${data[1]},${data[2]},${data[3]/255*(opt.opacity||1)})`});
-        }
-      }
-      (typeof handler == "function") && handler(image);
-    };
-    img.onerror = function(){throw new Error("Failed to fetch the image")};
-    img.setAttribute("src",opt.url);
-  }
-  else throw new Error("No Image Url detected");
-};*/
-var reset_button = {
-  id: "reset",
-  position: [2,50,8,14],
-  clickable: true,
-  shortcut: "J",
-  visible: true,
-  components: [
-    { type:"round",position:[0,0,100,100],fill:"#456",stroke:"#CDE",width:2},
-    { type: "text",position:[10,35,80,30],value:"RESET",color:"#CDE"},
-    { type: "text",position:[20,70,60,20],value:"[R]",color:"#CDE"}
-    ]
-};
-
-var resetShip = function(ship) {
-  ship.set({type:101}) ;
-} ;
-this.tick = function(game) {
-  if (game.step%60==0) // ensure this is done only once per second
-  {
-    for (var i=0;i<game.ships.length;i++)
-    {
-      var ship = game.ships[i] ;
-      if (!ship.custom.reset_button_installed)
-      {
-        ship.custom.reset_button_installed = true; // use ship.custom to store custom values
-        ship.setUIComponent(reset_button);
-      }
-    }
-  }
-} ;
-
-this.event = function(event,game) {
-  switch (event.name)
-  {
-    case "ui_component_clicked":
-      var ship = event.ship ;
-      var component = event.id ;
-      if (component == "reset") // check that this is our component "warp"
-      {
-        resetShip(ship);
-      }
-      break ;
-  }
-} ;
-
 playerList = function(){
   echo("\nList of players and their IDs:");
   for (let i=0; i<game.ships.length; i++){ 
     echo(i+": "+game.ships[i].name);  
   } 
-  echo("\n");
 };
 
 kick = id => {
@@ -635,28 +537,3 @@ kick = id => {
   return game.ships[id].name + " was kicked\n";
 };
 
-game.modding.commands.kick = function(req)
-{
-  let args=req.replace(/^\s+/,"").replace(/\s+/," ").split(" "),id=Number(args[1]||"NaN");
-  if (isNaN(id)) game.modding.terminal.error("Please specify an id to kick");
-  else
-  {
-    let ship=game.ships[id];
-    if (!ship) game.modding.terminal.error("Requested ship not found!");
-    else
-    {
-      try
-      {
-        ship.gameover({
-          "Info": "You've been kicked by the map host",
-          "Reason": args.slice(2,args.length).join(" ")||"No reason has been provided"
-        });
-        echo("Ship with id "+id+" was kicked");
-      }
-      catch(e)
-      {
-        game.modding.terminal.error("An error occured while kicking the requested ship!");
-      }
-    }
-  }
-};
