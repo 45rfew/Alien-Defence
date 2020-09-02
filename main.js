@@ -186,7 +186,7 @@ function tick(game){
     if (game.aliens.length < max){
       var spawn_delay = game.step / ~~(1800/2*2.5);
       var alien = aliens[~~(Math.random()*Math.min(aliens.length,spawn_delay/4))];
-      var coords = [[0,0],[0,0],[0,0],[0,0]];
+      var coords = [[0,35],[0,-35]];
       oof = coords[~~(Math.random()*coords.length)];
       alien.x = oof[1]+Math.cos(Math.random()*Math.PI*2)*5;
       alien.y = oof[0]+Math.sin(Math.random()*Math.PI*2)*5;
