@@ -178,6 +178,7 @@ this.options = {
   asteroids_strength: 10000,
   ships: ships,
   reset_tree: true,
+  choose_ship: [501,502,503]
 };
 
 function tick(game){
@@ -186,10 +187,10 @@ function tick(game){
     if (game.aliens.length < max){
       var spawn_delay = game.step / ~~(1800/2*2.5);
       var alien = aliens[~~(Math.random()*Math.min(aliens.length,spawn_delay/4))];
-      var coords = [[0,35],[0,-35]];
-      oof = coords[~~(Math.random()*coords.length)];
-      alien.x = oof[1]+Math.cos(Math.random()*Math.PI*2)*5;
-      alien.y = oof[0]+Math.sin(Math.random()*Math.PI*2)*5;
+      //var coords = [[0,35],[0,-35]];
+      //oof = coords[~~(Math.random()*coords.length)];
+      alien.x = 0;//oof[1]+Math.cos(Math.random()*Math.PI*2)*5;
+      alien.y = 0;//oof[0]+Math.sin(Math.random()*Math.PI*2)*5;
       game.addAlien(alien);
     }
     teams.count = [0,0];
@@ -244,19 +245,8 @@ this.event = function(event, game){
 };
 
 var aliens = [
-  {code:10,level:0,points:20,crystal_drop:20},
-  {code:11,level:0,points:30,crystal_drop:35},
-  {code:10,level:1,points:40,crystal_drop:35},
-  {code:17,level:0,points:30,crystal_drop:40},
-  {code:16,level:0,points:30,crystal_drop:40},
-  {code:17,level:1,points:50,crystal_drop:50},
-  {code:16,level:1,points:50,crystal_drop:50}, 
-  {code:11,level:2,points:120,crystal_drop:100}, 
-  {code:10,level:2,points:70,crystal_drop:40}, 
-  {code:14,level:1,points:70,crystal_drop:60}, 
-  {code:16,level:2,points:150,crystal_drop:150},
-  {code:17,level:3,points:100,crystal_drop:150}, 
-  {code:19,level:0,points:400,crystal_drop:400},
+{code:11,level:1,points:50,crystal_drop:30},
+{code:11,level:2,points:120,crystal_drop:50}
 ];
 
 var teams = {
